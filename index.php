@@ -4,20 +4,17 @@
     
     include('functions.php'); 
     
+    $page_title = 'Algarve Beach Apartments'; 
+
 ?>
 
 <!DOCTYPE html>
 
 <html>
-    <head> 
-
-        <meta charset='UTF-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-        <Title><?php echo $site_title;?></Title>    
+    <head>
         
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        
+        <?php require_once('header.php'); ?>
+            
     </head>    
     
     <body bgcolor='#f3f3f3'>
@@ -26,7 +23,7 @@
         
         <div class='container'>
                     
-                <h1 class='display-4'><?php echo strtoupper($site_title);?></h1>
+                <h1 class='display-4'><?php echo strtoupper($page_title);?></h1>
                 
                 <p><?php echo date("H:i, D, d M Y");?></p>
         </div>
