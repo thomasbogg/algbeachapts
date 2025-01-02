@@ -1,0 +1,1 @@
+<footer size='small'>Copyright (c) <?php echo date('Y'), ' ', $my_name; ?> - All rights reserved</footer>
