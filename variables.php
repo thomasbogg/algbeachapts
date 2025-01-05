@@ -16,6 +16,8 @@
         
         'Parque da Corcovada' => '#',
 
-    )
+    );
+
+    $test = 'Test push from bash script';
 
 ?>
