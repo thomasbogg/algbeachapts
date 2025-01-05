@@ -18,6 +18,6 @@
 
     );
 
-    $test = 'Test push from bash script';
+    $test = 'Test push from bash ';
 
 ?>
