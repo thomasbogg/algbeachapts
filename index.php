@@ -29,9 +29,9 @@
         <div class="container text-center">
 
 
-        <h1 class='display-6 my-3'>Our Locations</h1>
+        <h1 class='display-6 my-5'>Our Locations</h1>
 
-            <div class="row text-nowrap fs-4">
+            <div class="row text-nowrap fs-4 my-2">
           
                 <div class="col">
                     Quinta da Barracuda
