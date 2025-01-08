@@ -18,9 +18,34 @@
 
         <?php require_once("navbar.php");?>
         
-        <div class='container'>
-                    
-                <h1 class='display-4'><?php echo strtoupper($page_title);?></h1>
+        <div>
+        
+            <img src='head-background.jpg' class='img-fluid opacity-75'>
+
+            <div class='position-absolute bottom-50 start-50'> Here </div>
+        
+        </div>
+        
+        <div class="container text-center">
+
+
+        <h1 class='display-6 my-3'>Our Locations</h1>
+
+            <div class="row text-nowrap fs-4">
+          
+                <div class="col">
+                    Quinta da Barracuda
+                </div>
+            
+                <div class="col">
+                    Clube do Monaco
+                </div>
+                
+                <div class="col">
+                    Parque da Corcovada
+                </div>
+
+            </div>
                 
                 <p><?php echo date("H:i, D, d M Y");?></p>
         </div>

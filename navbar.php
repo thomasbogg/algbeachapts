@@ -2,12 +2,12 @@
 
   <div class="container sticky-top">
   
-    <a class="navbar-brand px-md-2 px-lg-3 px-xl-4 my-0 d-md-none d-xl-block" href="#">
+    <a class="navbar-brand my-0 d-md-none d-xl-block mx-xxl-4" href="#">
       <img src="website-logo-full.png" class='img-fluid' alt="Algarve Beach Apartments">
     </a>
    
     
-    <a class="navbar-brand px-md-1 px-lg-3 px-xl-4 my-0 d-none d-lg-block d-xl-none" href="#">
+    <a class="navbar-brand my-0 d-none d-md-block d-lg-block d-xl-none" href="#">
       <img src="website-logo-circle.png" class='img-fluid' alt="Algarve Beach Apartments">
     </a>
    
@@ -21,7 +21,7 @@
 
         <?php
 
-          $nav_items = array(
+          $nav_items_full = array(
 
               'Home' => '#',
               
@@ -34,18 +34,42 @@
               'Booking Conditions' => '#',
 
           );
-
-          foreach ($nav_items as $nav_item_name => $nav_item_link) {
           
-            echo "<li class='nav-item ps-1 px-lg-3 px-xl-4 text-nowrap text-center'>
-             
-                    <a class='nav-link' href='$nav_item_link'>$nav_item_name</a>
-                  
-                  </li>";
-          
+          foreach ($nav_items_full as $nav_item_name => $nav_item_link) {
+            
+            echo "<li class='nav-item px-2 px-lg-3 px-xxl-4 d-md-none d-lg-block text-nowrap text-center'>
+            
+            <a class='nav-link' href='$nav_item_link'>$nav_item_name</a>
+            
+            </li>";
+            
           }
-
-        ?>
+          
+          $nav_items_part = array(
+            
+              'Home' => '#',
+              
+              'Qta. da Barracuda' => '#',
+                
+              'Cl. do Monaco' => '#',
+              
+              'Pq. da Corcovada' => '#',
+              
+              'Conditions' => '#',
+              
+            );
+          
+          foreach ($nav_items_part as $nav_item_name => $nav_item_link) {
+          
+            echo "<li class='nav-item px-2 d-none d-md-block d-lg-none text-nowrap text-center'>
+            
+            <a class='nav-link' href='$nav_item_link'>$nav_item_name</a>
+          
+            </li>";
+            
+          }
+          
+          ?>
       </ul>
     </div>
   </div>
